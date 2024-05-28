@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section class="rating-card">
+        <article class="rating-card__header">
+          <span class="star">
+            <img src="./assets/icon-star.svg" alt="iconstar" />
+          </span>
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </article>
+        <form action="" class="rating-card__form">
+          <div>
+            <div class="btn-rating">
+              <input type="radio" value="1" name="rating" id="rating-1" />
+              <label for="rating-1">1</label>
+            </div>
+            <div class="btn-rating">
+              <input type="radio" value="2" name="rating" id="rating-2" />
+              <label for="rating-2">2</label>
+            </div>
+            <div class="btn-rating">
+              <input type="radio" value="3" name="rating" id="rating-3" />
+              <label for="rating-3">3</label>
+            </div>
+            <div class="btn-rating">
+              <input type="radio" value="4" name="rating" id="rating-4" />
+              <label for="rating-4">4</label>
+            </div>
+            <div class="btn-rating">
+              <input type="radio" value="5" name="rating" id="rating-5" />
+              <label for="rating-5">5</label>
+            </div>
+          </div>
+          <button class="btn-submit" type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="success-card card-layout">
+        <figure>
+          <img
+            src="./assets/illustration-thank-you.svg"
+            alt="thank-you-illustration"
+          />
+          <figcaption>
+            You selected <span id="selected-rating-text"></span> out of 5
+          </figcaption>
+        </figure>
+        <h2>Thank you</h2>
+        <p>
+          We appreciate tou taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+    <script>
+      /// -------------------------------------- SCRIPT --------------------------------------------------------
+      const ratingCard = document.querySelector(".rating-card");
+      const successCard = document.querySelector(".success-card");
+      const selectedRatingText = document.querySelector(
+        "#selected-rating-text"
+      );
+      document
+        .querySelector(".rating-card__form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const selectedValue = document.querySelector(
+            'input[name="rating"]:checked'
+          ).value;
+
+          selectedRatingText.textContent = selectedValue;
+          ratingCard.style.display = "none";
+          successCard.style.display = "flex";
+        });
+    </script>
+  </body>
+</html>
