@@ -21,8 +21,8 @@
   </head>
   <body>
     <main>
-      <section class="rating-card">
-        <article class="rating-card__header">
+      <section class="rating-wrapper">
+        <article class="rating-content">
           <span class="star">
             <img src="./assets/icon-star.svg" alt="iconstar" />
           </span>
@@ -32,7 +32,7 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </article>
-        <form action="" class="rating-card__form">
+        <form action="" class="rating-form">
           <div>
             <div class="btn-rating">
               <input type="radio" value="1" name="rating" id="rating-1" />
@@ -58,7 +58,8 @@
           <button class="btn-submit" type="submit">Submit</button>
         </form>
       </section>
-      <section class="success-card card-layout">
+
+      <section class="message-wrapper card-layout">
         <figure>
           <img
             src="./assets/illustration-thank-you.svg"
@@ -75,25 +76,6 @@
         </p>
       </section>
     </main>
-    <script>
-      /// -------------------------------------- SCRIPT --------------------------------------------------------
-      const ratingCard = document.querySelector(".rating-card");
-      const successCard = document.querySelector(".success-card");
-      const selectedRatingText = document.querySelector(
-        "#selected-rating-text"
-      );
-      document
-        .querySelector(".rating-card__form")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
-          const selectedValue = document.querySelector(
-            'input[name="rating"]:checked'
-          ).value;
-
-          selectedRatingText.textContent = selectedValue;
-          ratingCard.style.display = "none";
-          successCard.style.display = "flex";
-        });
-    </script>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

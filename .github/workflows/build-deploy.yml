@@ -1,4 +1,4 @@
-name: Deploy to github-pages
+name: Build & Deploy to github-pages
 
 on:
   workflow_dispatch:
@@ -13,13 +13,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

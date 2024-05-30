@@ -5,6 +5,8 @@
   --clr-dark-blue: #252d37;
   --bg-very-dark-blue: #121417;
   --clr-orange: #fb7413;
+
+  --b-rounded: 2.4rem;
 }
 
 html {
@@ -22,40 +24,36 @@ body {
   background-color: var(--bg-very-dark-blue);
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   min-height: 100vh;
   padding: 0 1.6rem 0 1.6rem;
 }
 
-/* --------------------------------- header --------------------------------- */
-.rating-card {
+.rating-wrapper {
+  margin: 15.4rem 2.4rem 0 2.4rem;
   width: 100%;
-  border-radius: 1.6rem;
+  border-radius: var(--b-rounded);
   padding: 2.4rem 2.4rem 3.2rem 2.4rem;
   background: linear-gradient(#1f2630, #171e28);
   max-width: 41.2rem;
   min-width: 30rem;
   max-height: 41.8rem;
 }
-
-.rating-card__header h2 {
+.rating-content h2 {
   font-size: 2.4rem;
   color: var(--clr-white);
   letter-spacing: -0.015rem;
-  margin: 1.8rem 0 1.2rem 0;
+  margin: 3.2rem 0 1.2rem 0;
 }
-
-.rating-card__header p {
+.rating-content p {
   color: var(--clr-light-gray);
   max-width: 37ch;
   font-size: 1.4rem;
   line-height: 1.6;
 }
-
-.rating-card__header .star {
-  width: 4.2rem;
-  height: 4.2rem;
+.rating-content .star {
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 9999px;
   background-color: var(--clr-dark-blue);
   display: flex;
@@ -63,11 +61,10 @@ body {
   align-items: center;
 }
 
-.rating-card__form {
+.rating-form {
   margin-top: 2.6rem;
 }
-
-.rating-card__form > div {
+.rating-form > div {
   display: flex;
   justify-content: space-between;
 }
@@ -97,11 +94,11 @@ body {
 }
 
 .btn-submit {
-  margin: 2.4rem 0 0 0;
+  margin: 3.2rem 0 0 0;
   background-color: var(--clr-orange);
   width: 100%;
   color: var(--clr-white);
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.14rem;
   font-weight: 700;
   font-size: 1.4rem;
   padding: 1.6rem 0 1.2rem 0;
@@ -111,6 +108,50 @@ body {
   border-radius: 25rem;
   transition: 200ms ease;
   text-transform: uppercase;
+}
+
+.message-wrapper {
+  width: 100%;
+  border-radius: var(--b-rounded);
+  padding: 3.4rem 2.4rem 4rem 2.4rem;
+  margin-top: 15.4rem;
+  background: linear-gradient(#1f2630, #171e28);
+  max-width: 41.2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.message-wrapper figure {
+  width: 100%;
+}
+.message-wrapper figure figcaption {
+  font-size: 1.4rem;
+  letter-spacing: -0.04rem;
+  color: var(--clr-orange);
+  background-color: var(--clr-dark-blue);
+  width: fit-content;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 3.2rem;
+  padding: 0.8rem 1.8rem 0.7rem 1.9rem;
+}
+.message-wrapper figure img {
+  display: block;
+  margin: auto;
+}
+.message-wrapper h2 {
+  font-size: 2.4rem;
+  color: var(--clr-white);
+  letter-spacing: -0.015rem;
+  margin: 3.6rem 0 1rem 0;
+  text-align: center;
+}
+.message-wrapper p {
+  text-align: center;
+  color: var(--clr-light-gray);
+  max-width: 35ch;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 @media (hover: hover) {
@@ -124,74 +165,24 @@ body {
   }
 }
 
-.success-card {
-  width: 100%;
-  border-radius: 1.6rem;
-  padding: 3.4rem 2.4rem 4rem 2.4rem;
-  background: linear-gradient(#1f2630, #171e28);
-  max-width: 41.2rem;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-
-.success-card figure {
-  width: 100%;
-}
-
-.success-card figure figcaption {
-  font-size: 1.4rem;
-  letter-spacing: -0.04rem;
-  color: var(--clr-orange);
-  background-color: var(--clr-dark-blue);
-  width: fit-content;
-  border-radius: 30px;
-  margin: auto;
-  margin-top: 3.2rem;
-  padding: 0.8rem 1.8rem 0.7rem 1.9rem;
-}
-
-.success-card figure img {
-  display: block;
-  margin: auto;
-}
-
-.success-card h2 {
-  font-size: 2.4rem;
-  color: var(--clr-white);
-  letter-spacing: -0.015rem;
-  margin: 3.6rem 0 1rem 0;
-  text-align: center;
-}
-
-.success-card p {
-  text-align: center;
-  color: var(--clr-light-gray);
-  max-width: 35ch;
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
 @media screen and (min-width: 400px) {
-  .rating-card {
-    padding: 3.6rem 3.2rem 3.2rem 3.2rem;
+  .rating-wrapper {
+    padding: 3.2rem 4rem 3.2rem 3.2rem;
+    margin-top: 19.5rem;
   }
-
-  .success-card {
+  .message-wrapper {
     padding: 4.6rem 3.2rem 4.6rem 3.2rem;
+    margin-top: 19.5rem;
   }
-
-  .success-card h2,
-  .rating-card__header h2 {
+  .message-wrapper h2,
+  .rating-content h2 {
     font-size: 2.8rem;
   }
-
-  .success-card p,
-  .rating-card__header p {
+  .message-wrapper p,
+  .rating-content p {
     font-size: 1.5rem;
   }
-
-  .rating-card__header figure {
+  .rating-content figure {
     width: 5.2rem;
     height: 5.2rem;
   }
@@ -201,6 +192,6 @@ body {
     font-size: 1.6rem;
   }
   .btn-submit {
-    letter-spacing: 0.14rem;
+    font-size: 1.6rem;
   }
 }
