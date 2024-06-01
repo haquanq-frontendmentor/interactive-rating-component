@@ -17,6 +17,7 @@ Users should be able to:
 ### Solution
 
 - Built with: `HTML` `CSS` `JS`
+- Mobile first workflow
 
 :link: [`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-and-js-0cQRbhyX83) :link: [`Live Site Link`](https://haquanq.github.io/fm-interactive-rating-component/)
 
