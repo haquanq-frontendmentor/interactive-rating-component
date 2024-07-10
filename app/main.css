@@ -59,7 +59,7 @@ h6 {
 
 .main__container {
   padding-top: clamp(9.625rem, 10vw + 4rem, 12.25rem);
-  padding-bottom: clamp(9.625rem, 10vw + 4rem, 12.25rem);
+  padding-bottom: clamp(9.625rem, 10vw + 4rem, 11.8125rem);
   background-color: var(--clr-blue-900);
   font-family: var(--font-sans);
   font-size: var(--text-body);
