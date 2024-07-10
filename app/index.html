@@ -20,62 +20,101 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <main>
-      <section class="rating-wrapper">
-        <article class="rating-content">
-          <span class="star">
+    <main class="main__container">
+      <section class="rating__wrapper">
+        <div class="rating__content">
+          <div class="rating__image">
             <img src="./assets/icon-star.svg" alt="iconstar" />
-          </span>
-          <h2>How did we do?</h2>
-          <p>
+          </div>
+          <h2 class="rating__title">How did we do?</h2>
+          <p class="rating__description">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-        </article>
-        <form action="" class="rating-form">
-          <div>
-            <div class="btn-rating">
-              <input type="radio" value="1" name="rating" id="rating-1" />
-              <label for="rating-1">1</label>
-            </div>
-            <div class="btn-rating">
-              <input type="radio" value="2" name="rating" id="rating-2" />
-              <label for="rating-2">2</label>
-            </div>
-            <div class="btn-rating">
-              <input type="radio" value="3" name="rating" id="rating-3" />
-              <label for="rating-3">3</label>
-            </div>
-            <div class="btn-rating">
-              <input type="radio" value="4" name="rating" id="rating-4" />
-              <label for="rating-4">4</label>
-            </div>
-            <div class="btn-rating">
-              <input type="radio" value="5" name="rating" id="rating-5" />
-              <label for="rating-5">5</label>
-            </div>
+        </div>
+        <form id="interactive-rating-form" class="rating__form">
+          <div class="radiobox">
+            <input
+              class="radiobox__input"
+              type="radio"
+              value="1"
+              name="rating"
+              id="rating-1"
+            />
+            <label class="radiobox__label" for="rating-1">
+              <span> 1 </span>
+            </label>
           </div>
-          <button class="btn-submit" type="submit">Submit</button>
+          <div class="radiobox">
+            <input
+              class="radiobox__input"
+              type="radio"
+              value="2"
+              name="rating"
+              id="rating-2"
+            />
+            <label class="radiobox__label" for="rating-2">
+              <span> 2 </span>
+            </label>
+          </div>
+          <div class="radiobox">
+            <input
+              class="radiobox__input"
+              type="radio"
+              value="3"
+              name="rating"
+              id="rating-3"
+            />
+            <label class="radiobox__label" for="rating-3">
+              <span>3</span>
+            </label>
+          </div>
+          <div class="radiobox">
+            <input
+              class="radiobox__input"
+              type="radio"
+              value="4"
+              name="rating"
+              id="rating-4"
+            />
+            <label class="radiobox__label" for="rating-4"><span>4</span></label>
+          </div>
+          <div class="radiobox">
+            <input
+              class="radiobox__input"
+              type="radio"
+              value="5"
+              name="rating"
+              id="rating-5"
+            />
+            <label class="radiobox__label" for="rating-5"><span>5</span></label>
+          </div>
         </form>
+        <button
+          form="interactive-rating-form"
+          class="rating__submit-btn"
+          type="submit"
+        >
+          Submit
+        </button>
       </section>
 
-      <section class="message-wrapper card-layout">
-        <figure>
-          <img
-            src="./assets/illustration-thank-you.svg"
-            alt="thank-you-illustration"
-          />
-          <figcaption>
-            You selected <span id="selected-rating-text"></span> out of 5
-          </figcaption>
-        </figure>
-        <h2>Thank you</h2>
-        <p>
+      <section class="appreciate__wrapper">
+        <img
+          class="appreciate__image"
+          src="./assets/illustration-thank-you.svg"
+          alt="thank-you-illustration"
+        />
+        <p class="appreciate__stat">
+          You selected <span id="selected-rating-text"></span> out of 5
+        </p>
+        <h2 class="appreciate__title">Thank you</h2>
+        <p class="appreciate__description">
           We appreciate tou taking the time to give a rating. If you ever need
           more support, don't hesitate to get in touch!
         </p>
       </section>
     </main>
-    <script type="text/javascript" src="./main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

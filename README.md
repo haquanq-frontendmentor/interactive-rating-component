@@ -5,29 +5,23 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### The challenge
 
-- No access to desgin files :expressionless:
+- No access to desgin files, attempt pixel-perfect
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size :yum:
-- See hover states for all interactive elements on the page :yum:
-- Select and submit a number rating :yum:
-- See the "Thank you" card state after submitting a rating :yum:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
 ### Solution
 
 - Built with: `HTML` `CSS` `JS`
-- Mobile first workflow
-
-:link: [`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-and-js-0cQRbhyX83) :link: [`Live Site Link`](https://haquanq.github.io/fm-interactive-rating-component/)
+- Mobile-first workflow
 
 ![](./.docs/design/desktop-design.jpg)
 
 ## Working in `fm-interactive-rating-component` repository
-
-### Packages being used
-
-- [`browser-sync`](https://github.com/BrowserSync/browser-sync)
 
 ### Clone this project to your machine
 
