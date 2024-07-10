@@ -57,6 +57,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.fake__h1 {
+  position: absolute;
+  opacity: 0;
+}
+
 .main__container {
   padding-top: clamp(9.625rem, 10vw + 4rem, 12.25rem);
   padding-bottom: clamp(9.625rem, 10vw + 4rem, 11.8125rem);
