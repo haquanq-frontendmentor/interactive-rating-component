@@ -8,12 +8,12 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <main class="main__container">
-      <h1 class="fake__h1">Interactive rating component</h1>
-      <section class="rating__wrapper">
+    <main>
+      <h1 class="sr-only">Interactive rating component</h1>
+      <section class="rating__wrapper" aria-hidden="true">
         <div class="rating__content">
-          <div class="rating__image">
-            <img src="./assets/icon-star.svg" alt="iconstar" />
+          <div class="rating__icon-wrapper">
+            <img class="rating__icon" src="./assets/icon-star.svg" alt="iconstar" />
           </div>
           <h2 class="rating__title">How did we do?</h2>
           <p class="rating__description">
@@ -22,38 +22,40 @@
           </p>
         </div>
         <form id="interactive-rating-form" class="rating__form">
-          <div class="radiobox">
-            <input class="radiobox__input" type="radio" value="1" name="rating" id="rating-1" />
-            <label class="radiobox__label" for="rating-1">
-              <span> 1 </span>
+          <fieldset class="radiobox__group">
+            <legend class="sr-only">Rate us (from 1 to 5)</legend>
+            <label class="radiobox__item" for="rating-1">
+              <input class="radiobox__input" type="radio" value="1" name="rating" id="rating-1" />
+              <span class="radiobox__label">1</span>
             </label>
-          </div>
-          <div class="radiobox">
-            <input class="radiobox__input" type="radio" value="2" name="rating" id="rating-2" />
-            <label class="radiobox__label" for="rating-2">
-              <span> 2 </span>
+            <label class="radiobox__item" for="rating-2">
+              <input class="radiobox__input" type="radio" value="2" name="rating" id="rating-2" />
+              <span class="radiobox__label">2</span>
             </label>
-          </div>
-          <div class="radiobox">
-            <input class="radiobox__input" type="radio" value="3" name="rating" id="rating-3" />
-            <label class="radiobox__label" for="rating-3">
-              <span>3</span>
+            <label class="radiobox__item" for="rating-3">
+              <input class="radiobox__input" type="radio" value="3" name="rating" id="rating-3" />
+              <span class="radiobox__label">3</span>
             </label>
-          </div>
-          <div class="radiobox">
-            <input class="radiobox__input" type="radio" value="4" name="rating" id="rating-4" />
-            <label class="radiobox__label" for="rating-4"><span>4</span></label>
-          </div>
-          <div class="radiobox">
-            <input class="radiobox__input" type="radio" value="5" name="rating" id="rating-5" />
-            <label class="radiobox__label" for="rating-5"><span>5</span></label>
-          </div>
+            <label class="radiobox__item" for="rating-4">
+              <input class="radiobox__input" type="radio" value="4" name="rating" id="rating-4" />
+              <span class="radiobox__label">4</span>
+            </label>
+            <label class="radiobox__item" for="rating-5">
+              <input class="radiobox__input" type="radio" value="5" name="rating" id="rating-5" />
+              <span class="radiobox__label">5</span>
+            </label>
+          </fieldset>
         </form>
-        <button form="interactive-rating-form" class="rating__submit-btn" type="submit">Submit</button>
+        <button class="rating__submit-btn" form="interactive-rating-form" type="submit">Submit</button>
       </section>
 
       <section class="appreciate__wrapper">
-        <img class="appreciate__image" src="./assets/illustration-thank-you.svg" alt="thank-you-illustration" />
+        <img
+          class="appreciate__image"
+          src="./assets/illustration-thank-you.svg"
+          alt="thank-you-illustration"
+          aria-hidden="true"
+        />
         <p class="appreciate__stat">You selected <span id="selected-rating-text"></span> out of 5</p>
         <h2 class="appreciate__title">Thank you</h2>
         <p class="appreciate__description">

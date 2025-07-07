@@ -4,6 +4,7 @@ const selectedRatingText = document.querySelector("#selected-rating-text");
 
 document.querySelector("#interactive-rating-form").addEventListener("submit", (e) => {
     e.preventDefault();
+
     const selectedValue = document.querySelector('input[name="rating"]:checked').value;
 
     selectedRatingText.textContent = selectedValue;
