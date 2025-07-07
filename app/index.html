@@ -10,9 +10,9 @@
   <body>
     <main>
       <h1 class="sr-only">Interactive rating component</h1>
-      <section class="rating__wrapper" aria-hidden="true">
+      <section class="rating__wrapper">
         <div class="rating__content">
-          <div class="rating__icon-wrapper">
+          <div class="rating__icon-wrapper" aria-hidden="true">
             <img class="rating__icon" src="./assets/icon-star.svg" alt="iconstar" />
           </div>
           <h2 class="rating__title">How did we do?</h2>
@@ -23,7 +23,7 @@
         </div>
         <form id="interactive-rating-form" class="rating__form">
           <fieldset class="radiobox__group">
-            <legend class="sr-only">Rate us (from 1 to 5)</legend>
+            <legend class="sr-only">Rate us from 1 to 5</legend>
             <label class="radiobox__item" for="rating-1">
               <input class="radiobox__input" type="radio" value="1" name="rating" id="rating-1" />
               <span class="radiobox__label">1</span>

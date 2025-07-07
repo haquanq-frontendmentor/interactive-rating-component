@@ -5,9 +5,11 @@ const selectedRatingText = document.querySelector("#selected-rating-text");
 document.querySelector("#interactive-rating-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const selectedValue = document.querySelector('input[name="rating"]:checked').value;
+    const selectedInput = document.querySelector('input[name="rating"]:checked');
+    if (selectedInput === null) alert("Please rate us!!");
 
-    selectedRatingText.textContent = selectedValue;
+    selectedRatingText.textContent = selectedInput.value;
     ratingCard.style.display = "none";
     successCard.style.display = "flex";
+    successCard.focus();
 });
