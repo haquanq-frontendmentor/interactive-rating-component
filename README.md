@@ -23,7 +23,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 Funtional
 
-- [*] After select rating, user press submit button to show success card.
+- [x] After select rating, user press submit button to show success card.
 
 Accessibility
 
