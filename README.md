@@ -30,7 +30,7 @@ Accessibility
 - [x] Responsive accross different devices
 - [x] Interactive elements have clear indicator when focused
 
-## Preview
+### Preview
 
 ![](./.docs/design/desktop-design.jpg)
 
@@ -46,6 +46,7 @@ Developed with mobile-first workflow, followed with [ARIA Authoring Practices Gu
 | ------------- | ---------------------------------- |
 | `HTML`        | Standard markup language           |
 | `CSS`         | Vanilla CSS                        |
+| `JavaScript` | With out libraries |
 | `BrowserSync` | Development server, live reloading |
 
 ## :astronaut: Working in this repository
