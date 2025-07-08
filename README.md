@@ -7,7 +7,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 - [Project overview](#rocket-project-overview)
 - [Development workflow](#boat-development-workflow)
-- [Working in this repository](#astronaut-working-in-fm-results-summary-component-repository)
+- [Working in this repository](#astronaut-working-in-this-repository)
 - [License](#page_with_curl-license)
 
 ## :rocket: Project overview
