@@ -1,5 +1,5 @@
 {
-  "name": "fm-interactive-rating-component",
+  "name": "interactive-rating-component",
   "description": "Solution for frontendmentor.io challenge: interactive-rating-component",
   "devDependencies": {
     "browser-sync": "^3.0.2"
