@@ -1,0 +1,15 @@
+{
+  "name": "Interactive Rating Component",
+  "featured": false,
+  "colors": {
+    "brand": "#F97710"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/interactive-rating-component/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "newbie",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-first-pixel-perfect-w-html-and-css-and-js-idX_tKF21-"
+  }
+}
